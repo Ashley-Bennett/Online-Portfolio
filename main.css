@@ -8,6 +8,19 @@ body {
     background-attachment: fixed;
 }
 
+.stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: inline;
+    color: white;
+    white-space: pre;
+    line-height: 82%;
+    overflow: hidden;
+}
+
 .text {
     font-family: 'Montserrat', sans-serif;
     color: #3e6787;
@@ -32,16 +45,166 @@ body {
 }
 
 #intro {
-    margin-left: 25%;
-    margin-right: 25%;
+    width: 80%;
+    margin: 16px auto;
+
 }
 
-.main {}
+
+
+#line1 {
+    animation: shine1 10s infinite
+}
+
+#line2 {
+    animation: shine2 15s infinite
+}
+
+#line3 {
+    animation: shine3 20s infinite
+}
+
+@keyframes shine1 {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    35% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    85% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+@keyframes shine2 {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 0;
+    }
+
+    35% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    85% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes shine3 {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    35% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    85% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.info {
+    position: absolute;
+    height: 83vh;
+    overflow: scroll;
+}
+
+
 
 #photo {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 120px;
 }
 
 .logo-flex {
@@ -58,3 +221,10 @@ body {
 .logo {
     margin: 20px;
 }
+
+/* @media (max-width: 833px){
+    #intro{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+} */
