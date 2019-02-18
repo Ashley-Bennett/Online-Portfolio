@@ -4,6 +4,7 @@ body {
     background: -webkit-linear-gradient(top, #000000 0%, #071423 25%, #0e1d2e 55%, #4a3429 73%, #af6527 85%, #000000 88%, #000000 100%);
     background: linear-gradient(to bottom, #000000 0%, #071423 25%, #0e1d2e 55%, #4a3429 73%, #af6527 85%, #000000 88%, #000000 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000a12', endColorstr='#000000', GradientType=0);
+    background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -47,7 +48,6 @@ body {
 #intro {
     width: 80%;
     margin: 16px auto;
-
 }
 
 
@@ -155,7 +155,7 @@ body {
     }
 
     25% {
-        opacity: 1;
+        opacity: 0;
     }
 
     30% {
@@ -187,7 +187,7 @@ body {
     }
 
     100% {
-        opacity: 1;
+        opacity: 0;
     }
 }
 
@@ -204,7 +204,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
-    margin-bottom: 120px;
+    /* margin-bottom: 120px; */
 }
 
 .logo-flex {
@@ -222,9 +222,64 @@ body {
     margin: 20px;
 }
 
-/* @media (max-width: 833px){
-    #intro{
-        margin-left: 5%;
-        margin-right: 5%;
+#people {
+    position: fixed;
+    bottom: 50px;
+    right: 0px;
+}
+
+#house {
+    position: fixed;
+    bottom: 80px;
+    left: 5px;
+}
+
+#smoke{
+    position: fixed;
+    bottom: 330px;
+    left: 15px;
+    opacity: 0;
+    animation: fade-in-right linear 2s infinite;
+    /* height: 100px;
+    /* width: 10px; */
+    /* animation: smokeup cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.5s forwards; */ */
+}
+
+@keyframes smokeup{
+    100% {
+        width: 300px;
     }
-} */
+}
+
+
+
+@keyframes fade-in-right {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    50% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    75%{
+        opacity: 0.3;
+    }
+    100%{
+        opacity: 0;
+        transform: translateX(0);
+    }
+  }
+
+@media (max-width: 880px) {
+    #people{
+        display: none;
+    }
+    #house{
+        display: none;
+    }
+    #smoke{
+        display: none;
+    }
+}
