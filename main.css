@@ -1,0 +1,51 @@
+body {
+    background: #000a12;
+    background: -moz-linear-gradient(top, #000a12 0%, #071423 25%, #0e1d2e 55%, #4a3429 73%, #af6527 85%, #000000 88%, #000000 100%);
+    background: -webkit-linear-gradient(top, #000a12 0%, #071423 25%, #0e1d2e 55%, #4a3429 73%, #af6527 85%, #000000 88%, #000000 100%);
+    background: linear-gradient(to bottom, #000a12 0%, #071423 25%, #0e1d2e 55%, #4a3429 73%, #af6527 85%, #000000 88%, #000000 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000a12', endColorstr='#000000', GradientType=0);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.text {
+    font-family: 'Montserrat', sans-serif;
+    color: #3e6787;
+    text-align: center;
+}
+
+#heading {
+    margin: 1em 0 0.5em 0;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #3e6787;
+    font-size: 58px;
+    text-shadow: 1px 1px 0 #305169,
+        2px 2px 0 #305169,
+        3px 3px 0 #0f1a22,
+        4px 4px 0 #0f1a22,
+        5px 5px 0 #0f1a22,
+        6px 6px 0 #0f1a22;
+}
+
+.main {}
+
+#photo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    padding: 5px;
+    position: relative;
+    bottom: 8px;
+}
