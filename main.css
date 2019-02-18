@@ -5,6 +5,9 @@ body {
     background: linear-gradient(to bottom, #000000 0%, #071423 25%, #0e1d2e 55%, #4a3429 73%, #af6527 85%, #000000 88%, #000000 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000a12', endColorstr='#000000', GradientType=0);
     background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -242,7 +245,7 @@ body {
     animation: fade-in-right linear 2s infinite;
     /* height: 100px;
     /* width: 10px; */
-    /* animation: smokeup cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.5s forwards; */ */
+    /* animation: smokeup cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.5s forwards; */
 }
 
 @keyframes smokeup{
