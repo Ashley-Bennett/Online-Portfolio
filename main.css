@@ -1,5 +1,4 @@
-
-html{
+html {
     min-height: 100%
 }
 
@@ -32,12 +31,24 @@ body {
     overflow: hidden;
 }
 
+
 .text {
     font-family: 'Montserrat', sans-serif;
     color: #3e6787;
     text-align: center;
     font-size: 22px;
     font-size: 1.4rem;
+}
+
+.arrowDown {
+    position: absolute;
+    margin-left: 50%;
+    transform: rotate(90deg) scale(3);
+    color: #3e6787;
+}
+
+.changeArrow {
+    background-color: white
 }
 
 #heading {
@@ -49,10 +60,7 @@ body {
     font-size: 3.625rem;
     text-shadow: 1px 1px 0 #305169,
         2px 2px 0 #305169,
-        3px 3px 0 #0f1a22,
-        4px 4px 0 #0f1a22,
-        5px 5px 0 #0f1a22,
-        6px 6px 0 #0f1a22;
+        3px 3px 0 #305169;
 }
 
 #intro {
@@ -63,15 +71,18 @@ body {
 
 
 #line1 {
-    animation: shine1 10s infinite
+    animation: shine1 10s infinite;
+    user-select: none
 }
 
 #line2 {
-    animation: shine2 15s infinite
+    animation: shine2 15s infinite;
+    user-select: none
 }
 
 #line3 {
-    animation: shine3 20s infinite
+    animation: shine3 20s infinite;
+    user-select: none
 }
 
 @keyframes shine1 {
@@ -246,52 +257,145 @@ body {
     left: 5px;
 }
 
-#smoke{
+#smoke {
     position: fixed;
     bottom: 330px;
     left: 15px;
     opacity: 0;
-    animation: fade-in-right linear 2s infinite;
+    animation: smoke linear 10s infinite;
     /* height: 100px;
     /* width: 10px; */
     /* animation: smokeup cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.5s forwards; */
 }
 
-@keyframes smokeup{
+@keyframes smoke {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    75% {
+        opacity: 0.3;
+    }
+
     100% {
-        width: 300px;
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+}
+
+.projects-container {
+    height: 100%;
+    width: 100%;
+}
+
+
+.projects {
+    display: grid;
+    grid-template-areas:
+        ". a a ."
+        ". b c ."
+        ". d e .";
+    grid-template-columns:
+        25% 25% 25% 25%;
+}
+
+.screen {
+    height: auto;
+    width: 100%;
+}
+
+.screen:hover {
+    cursor: pointer;
+}
+
+#title1 {
+    font-size: 1.8rem;
+}
+
+#title2 {
+    font-size: 1.8rem;
+}
+
+#title3 {
+    font-size: 1.8rem;
+}
+
+.headingP {
+    grid-area: a;
+}
+
+#headingP {
+    margin: 1em 0 0.5em 0;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #3e6787;
+    font-size: 58px;
+    font-size: 3.625rem;
+    text-shadow: 1px 1px 0 #305169,
+        2px 2px 0 #305169,
+        3px 3px 0 #305169;
+}
+
+.project1 {
+    grid-area: b;
+    padding: 5%;
+}
+
+.project2 {
+    grid-area: c;
+    padding: 5%;
+}
+
+.project3 {
+    grid-area: d;
+    padding: 5%;
+}
+
+@media (max-width: 1164px) {
+
+    #people {
+        display: none;
+    }
+
+    #house {
+        display: none;
+    }
+
+    #smoke {
+        display: none;
     }
 }
 
 
+@media (max-width: 1130px) {
+    .projects {
+        display: grid;
+        grid-template-areas:
+            ". a ."
+            ". b ."
+            ". c ."
+            ". d ."
+            ". e .";
+        grid-template-columns:
+            12.5% 75% 12.5%;
+        align-content: center;
+    }
 
-@keyframes fade-in-right {
-    0% {
-      opacity: 0;
-      transform: translateY(50px);
-    }
-    50% {
-      opacity: 1;
-      transform: translateX(0);
+    .screen {
+        display: flex;
+        height: auto;
+        width: 100%;
+        /* margin-left: 20px; */
     }
 
-    75%{
-        opacity: 0.3;
+    #headingP {
+        font-size: 3.5rem;
     }
-    100%{
-        opacity: 0;
-        transform: translateX(0);
-    }
-  }
 
-@media (max-width: 880px) {
-    #people{
-        display: none;
-    }
-    #house{
-        display: none;
-    }
-    #smoke{
-        display: none;
-    }
 }
