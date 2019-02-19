@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src=”https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <link rel="stylesheet" href="main.css">
     <link rel="icon" href="./Assets/Icon.png">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -17,18 +16,25 @@
 <body>
     <div class="wrapper">
         <div class="main">
-            <div class="stars">
+            <div class="navBar">
+                <ul class="navContainer">
+                    <a href="#about"><li class="text" id="aboutNav"><span class="underline">About</span></li></a>
+                    <a href="#projects"><li class="text" id="projectsNav"><span class="underline">Projects</span></li></a>
+            
+                </ul>
+            </div>
+            <!-- <div class="stars">
                 <p id="line1">               .                                         ∙                   .                                 .                                                    ∙        .                                                                                                               ●                                    .                                               ∙                    .                                       ∙                                      .        ●         </p><br>
                 <p id="line2">                                .                                                                                                                   ∙                                                              ●                                                                                                ∙                                                                                     ∙                                                                                                    . </p><br>
                 <p id="line3">                                                                    ∙                                                                     .                                                                          .                                                                            .                                                                                                                              ●  .                                  .                                               </p><br>
-            </div>
+            </div> -->
             <div class="info">
-                <h1 class="text" id="heading">Ashley Bennett</h1>
+                <h1 id="about" class="text" >Ashley Bennett</h1>
                 <p class="text" id="intro">Hi! My name is Ashley Bennett and I am a junior developer who is still studying
                     and always learning. I am currently studying with Code Nation and developing my skills everyday.<br><br>I
                     am confident in my understanding of HTML, CSS and JS and will be looking forward to working with
                     NodeJS, React and more developer tools and languages. Please check out my GitHub account and feel free
-                    to contact me. Thanks for checking out my page </p>
+                    to contact me. Thanks for checking out my page. </p>
                 <img id="photo" src="./Assets/profile_small.png" alt="Photo of Ashley Bennett"><br>
                 <div class="hidden"></div>
                 <div class="logo-flex">
@@ -38,7 +44,7 @@
                     <a class="logo" id="instagram" href="https://www.instagram.com/ashley___bennett/" target="blank"><img
                             src="./Assets/IG.png" alt="Instagram Logo"></a>
                 </div>
-                <div class="projects-container">
+                <div id="projects" class="projects-container">
                     <div class="projects">
                         <div class="headingP">
                             <h1 class="text" id="headingP">Projects</h1>
