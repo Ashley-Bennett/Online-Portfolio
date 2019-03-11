@@ -1,7 +1,11 @@
 html {
-    min-height: 100%
+    min-height: 100%;
+    user-select: none;
 }
 
+p {
+    text-decoration: none;
+}
 
 body {
     background: #000000;
@@ -18,8 +22,8 @@ body {
     min-height: 100%;
 }
 
-::-webkit-scrollbar { 
-    display: none; 
+::-webkit-scrollbar {
+    display: none;
 }
 
 .stars {
@@ -310,12 +314,14 @@ a:link {
     position: fixed;
     bottom: 50px;
     right: 0px;
+    pointer-events: none;
 }
 
 #house {
     position: fixed;
     bottom: 80px;
     left: 5px;
+    pointer-events: none;
 }
 
 #smoke {
@@ -323,10 +329,8 @@ a:link {
     bottom: 330px;
     left: 15px;
     opacity: 0;
+    pointer-events: none;
     animation: smoke linear 10s infinite;
-    /* height: 100px;
-    /* width: 10px; */
-    /* animation: smokeup cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.5s forwards; */
 }
 
 @keyframes smoke {
@@ -361,7 +365,8 @@ a:link {
     grid-template-areas:
         ". a a ."
         ". b c ."
-        ". d e .";
+        ". d e ."
+        ". f g .";
     grid-template-columns:
         25% 25% 25% 25%;
 }
@@ -429,6 +434,16 @@ a:link {
     padding: 5%;
 }
 
+.project5 {
+    grid-area: f;
+    padding: 5%;
+}
+
+.project6 {
+    grid-area: g;
+    padding: 5%;
+}
+
 @media (max-width: 1164px) {
 
     #people {
@@ -453,7 +468,9 @@ a:link {
             ". b ."
             ". c ."
             ". d ."
-            ". e .";
+            ". e ."
+            ". f ."
+            ". g .";
         grid-template-columns:
             12.5% 75% 12.5%;
         align-content: center;
