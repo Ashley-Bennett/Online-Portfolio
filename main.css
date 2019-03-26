@@ -1,11 +1,17 @@
-body {}
+body {
+    margin: 0;
+}
 
-#container {
+.container {
     display: grid;
     grid-template-areas:
-    "about . projects",
-    ". intro .",
-    ". contact .";
+        "about . projects"
+        ". intro ."
+        ". contact .";
+    grid-template-columns:
+        25vw 50vw 25vw;
+    grid-template-rows:
+        25vh 65vh 10vh;
 
 }
 
@@ -27,17 +33,36 @@ body {}
 
 .text {
     font-family: 'Rubik', sans-serif;
-    color: black
+    color: black;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 #about {
     grid-area: about;
+
+    border-right: 2px solid royalblue;
+    border-bottom: 2px solid royalblue;
+    transition: 100ms ease-in-out;
+}
+
+#about:hover {
+    transform: scale(1.2);
+    cursor: pointer;
 }
 
 #projects {
     grid-area: projects;
+
+    border-left: 2px solid red;
+    border-bottom: 2px solid red;
 }
 
 #contact {
     grid-area: contact;
+
+    border-left: 2px solid yellow;
+    border-top: 2px solid yellow;
+    border-right: 2px solid yellow;
+
 }
