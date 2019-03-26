@@ -1,5 +1,25 @@
+html {
+    min-height: 100%;
+    user-select: none;
+}
+
+p {
+    text-decoration: none;
+}
+
 body {
-    margin: 0;
+    background: #000000;
+    background: -moz-linear-gradient(top, #000000 0%, #071423 25%, #0e1d2e 55%, #4a3429 73%, #af6527 85%, #000000 88%, #000000 100%);
+    background: -webkit-linear-gradient(top, #000000 0%, #071423 25%, #0e1d2e 55%, #4a3429 73%, #af6527 85%, #000000 88%, #000000 100%);
+    background: linear-gradient(to bottom, #000000 0%, #071423 25%, #0e1d2e 55%, #4a3429 73%, #af6527 85%, #000000 88%, #000000 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000a12', endColorstr='#000000', GradientType=0);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100%;
 }
 
 #container {
