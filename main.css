@@ -148,7 +148,7 @@ body {
     grid-template-columns:
         25vw 50vw 25vw;
     grid-template-rows:
-        5vh auto 25vh;
+        5vh 70vh 25vh;
 }
 
 #projectText {
@@ -175,8 +175,106 @@ body {
     grid-area: projects;
     display: grid;
 
-    
+    grid-template-areas:
+        "A a b B"
+        "C c d D"
+        "E e f F"
+        "G g h H";
+    grid-template-columns:
+        25% 25% 25% 25%;
+        grid-template-rows:
+        25% 25% 25% 25%;
 }
+
+
+
+img{
+    width: 100%;
+}
+
+#projectsA {
+    grid-area: A;
+}
+
+#projectsa {
+    grid-area: a;
+    transition: 200ms ease-in-out
+}
+
+#projectsa:hover {
+    opacity: 0.15;
+}
+
+#projectsB {
+    grid-area: B;
+}
+
+#projectsb {
+    grid-area: b;
+}
+
+#projectsC {
+    grid-area: C;
+}
+
+#projectsc {
+    grid-area: c;
+}
+#projectsD {
+    grid-area: D;
+}
+
+#projectsd {
+    grid-area: d;
+}
+#projectsE {
+    grid-area: E;
+}
+
+#projectsf {
+    grid-area: f;
+}
+#projectsG {
+    grid-area: G;
+}
+
+#projectsg {
+    grid-area: g;
+}
+#projectsH {
+    grid-area: H;
+}
+
+#projectsh {
+    grid-area: h;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #contactPage {
     transition: 700ms linear;

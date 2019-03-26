@@ -9,6 +9,8 @@ const contactPage = document.getElementById("contactPage")
 const contactButton = document.getElementById("contact")
 const contactReturnButton = document.getElementById("contactReturn")
 
+const projectA = document.getElementsByClassName("")
+
 const dipsplayNone = (page) => {
     // page.style.display = "none"
     alert("hi")
