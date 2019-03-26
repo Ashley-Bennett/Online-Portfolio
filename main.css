@@ -35,6 +35,10 @@ body {
     transform: translate(100vw, 100vh) scale(0.1);
 }
 
+.exitAbout {
+    transform: translate(-100vw, -100vh) scale(2);
+}
+
 .introProject {
     transform: translate(-100vw, 100vh) scale(0.1);
 }
@@ -93,7 +97,7 @@ body {
 
 #aboutPage {
     transition: 700ms linear;
-    
+
     position: fixed;
     left: 0px;
     top: 0px;
@@ -109,7 +113,7 @@ body {
         25vh 50vh 25vh;
 }
 
-#aboutText{
+#aboutText {
     grid-area: text
 }
 
@@ -131,23 +135,23 @@ body {
 
 #projectPage {
     transition: 700ms linear;
-    
+    height: 100vh;
     position: fixed;
     left: 0px;
     top: 0px;
     text-align: center;
 
     grid-template-areas:
-        ". . ."
         ". text ."
+        "projects projects projects"
         "return . .";
     grid-template-columns:
         25vw 50vw 25vw;
     grid-template-rows:
-        25vh 50vh 25vh;
+        5vh auto 25vh;
 }
 
-#projectText{
+#projectText {
     grid-area: text
 }
 
@@ -167,9 +171,16 @@ body {
     transform: translate(100vw, -100vh) scale(0.1);
 }
 
+#projectsShowcase {
+    grid-area: projects;
+    display: grid;
+
+    
+}
+
 #contactPage {
     transition: 700ms linear;
-    
+
     position: fixed;
     left: 0px;
     top: 0px;
@@ -185,7 +196,7 @@ body {
         10vh 65vh 25vh;
 }
 
-#contactText{
+#contactText {
     grid-area: text
 }
 
