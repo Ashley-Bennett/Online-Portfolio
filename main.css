@@ -2,7 +2,7 @@ body {
     margin: 0;
 }
 
-.container {
+#container {
     display: grid;
     grid-template-areas:
         "about . projects"
@@ -13,6 +13,7 @@ body {
     grid-template-rows:
         25vh 65vh 10vh;
 
+    transition: 500ms ease-in;
 }
 
 .highlight {
@@ -28,6 +29,10 @@ body {
     transform: translate(-50%, -50%);
     font-size: 34pt;
     grid-area: intro;
+}
+
+.introAbout{
+    transform: translate(100vw, 100vh) scale(0.1);
 }
 
 
@@ -64,5 +69,15 @@ body {
     border-left: 2px solid yellow;
     border-top: 2px solid yellow;
     border-right: 2px solid yellow;
+}
 
+#aboutPage {
+    transition: 500ms ease-in;
+    display: none;
+    
+}
+
+
+.aboutIn {
+    transform: translate(0vw, 0vh) scale(1);
 }
