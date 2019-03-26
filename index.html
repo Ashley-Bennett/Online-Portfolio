@@ -5,114 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="main.css">
-    <link rel="icon" href="./Assets/Icon.png">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-
-    <title>Ashley Bennett's Online Portfolio</title>
-
+    <link rel="stylesheet" href="./main.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <title>Ashley Bennett</title>
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="main">
-            <div class="navBar">
-                <ul class="navContainer">
-                    <a href="#about">
-                        <li class="text" id="aboutNav"><span class="underline">About</span></li>
-                    </a>
-                    <a href="#projects">
-                        <li class="text" id="projectsNav"><span class="underline">Projects</span></li>
-                    </a>
-
-                </ul>
+    <div class="container">
+        <div id="intro">
+            <div class="text">
+                Hello there.
+                <br>
+                I'm <span class="highlight">Ashley Bennett</span>.
+                <br>
+                I am a full stack developer.
             </div>
-            <!-- <div class="stars">
-                <p id="line1">               .                                         ∙                   .                                 .                                                    ∙        .                                                                                                               ●                                    .                                               ∙                    .                                       ∙                                      .        ●         </p><br>
-                <p id="line2">                                .                                                                                                                   ∙                                                              ●                                                                                                ∙                                                                                     ∙                                                                                                    . </p><br>
-                <p id="line3">                                                                    ∙                                                                     .                                                                          .                                                                            .                                                                                                                              ●  .                                  .                                               </p><br>
-            </div> -->
-            <div class="info">
-                <h1 id="about" class="text">Ashley Bennett</h1>
-                <p class="text" id="intro">Hi! My name is Ashley Bennett and I am a junior developer who is still
-                    studying and always learning. I am currently studying with Code Nation and developing my skills
-                    every day.
-                    <br>
-                    I am confident in my understanding of HTML, CSS, and JS and will be looking forward to working with
-                    NodeJS, React and more developer tools and languages. Please check out my GitHub account and feel
-                    free to contact me. Thanks for checking out my page.</p>
-                <img id="photo" src="./Assets/profile_small.png" alt="Photo of Ashley Bennett"><br>
-                <div class="hidden"></div>
-                <div class="logo-flex">
-                    <a class="logo" id="github" href="https://github.com/Ashley-Bennett" target="blank"><img src="./Assets/GitHub-Mark/PNG/GitHub-Mark-Light-64px.png"
-                            alt="GitHub Logo"></a>
-                    <a class="logo" id="linkedIn" href="https://www.linkedin.com/in/ashley-bennett-7a5296180/" target="blank"><img
-                            src="./Assets/In-White-64px-R.png" alt="Linked In Logo"></a>
-                    <a class="logo" id="instagram" href="https://www.instagram.com/ashley___bennett/" target="blank"><img
-                            src="./Assets/IG.png" alt="Instagram Logo"></a>
-                </div>
-                <div id="projects" class="projects-container">
-                    <div class="projects">
-                        <div class="headingP">
-                            <h1 class="text" id="headingP">Projects</h1>
-                        </div>
-                        <div class="project1">
-                            <h1 class="text" id="title1">Javascipt Dice Game</h1>
-                            <a href="https://ashley-bennett.github.io/JS-Dice-Game/" target="blank"><img class="screen"
-                                    src="./Assets/Dice Screen.png" alt="Screenshot of Dice Game"></a>
-                            <p class="text">A simple javascript game in which you can play solo or as two players. <br>
-                                <a href="https://github.com/Ashley-Bennett/JS-Dice-Game" target="blank">Source Code</a></p>
-                        </div>
-                        <div class="project2">
-                            <h1 class="text" id="title2">Javascipt Drum Kit</h1>
-                            <a href="https://ashley-bennett.github.io/JS-Drum-Kit/" target="blank"><img class="screen"
-                                    src="./Assets/drumnsScreen.png" alt="Screenshot of drumkit"></a>
-                            <p class="text">Web based drumkit which takes key inputs and click inputs to play a sound.
-                                <br>
-                                <a href="https://github.com/Ashley-Bennett/JS-Drum-Kit" target="blank">Source Code</a></p>
-                        </div>
-                        <div class="project3">
-                            <h1 class="text" id="title3">Javascipt Keygen</h1>
-                            <a href="https://ashley-bennett.github.io/JS-Keycode-displayer/" target="blank"><img class="screen"
-                                    src="./Assets/keycodescreen.png" alt="Screenshot of keygen"></a>
-                            <p class="text">Web application that displays the key pressed as well as its index. <br>
-                                <a href="https://github.com/Ashley-Bennett/JS-Keycode-displayer" target="blank">Source
-                                    Code</a></p>
-                        </div>
-                        <div class="project4">
-                            <h1 class="text" id="title4">Asteroids</h1>
-                            <a href="https://ashley-bennett.github.io/Asteroids/" target="blank"><img class="screen"
-                                    src="./Assets/asteroids Screen.png" alt="Screenshot of asteroids"></a>
-                            <p class="text">Asteroids <br>
-                                <a href="https://github.com/Ashley-Bennett/Asteroids" target="blank">Source
-                                    Code</a></p>
-                        </div>
-                        <div class="project5">
-                            <h1 class="text" id="title4">React Game of Life</h1>
-                            <a href="https://ashley-bennett.github.io/React-Game-Of-Life/" target="blank"><img class="screen"
-                                    src="./Assets/GameOfLifeScreen.png" alt="Screenshot of Game of Life"></a>
-                            <p class="text">Conway's Game of Life recreated using React JS composing of props<br>
-                                <a href="https://github.com/Ashley-Bennett/React-Game-Of-Life" target="blank">Source
-                                    Code</a></p>
-                        </div>
-                        <div class="project6">
-                            <h1 class="text" id="title4">React Calculator</h1>
-                            <a href="https://ashley-bennett.github.io/React-Calculator/" target="blank"><img class="screen"
-                                    src="./Assets/CalculatorScreen.png" alt="Screenshot of Calculator"></a>
-                            <p class="text">A Calculator made using React JS with functional buttons and fully working
-                                display<br>
-                                <a href="https://github.com/Ashley-Bennett/React-Calculator" target="blank">Source
-                                    Code</a></p>
-                        </div>
+        </div>
+        <div id="about">
+            <div class="text">
+                About
+            </div>
+        </div>
+        <div id="projects">
+                <div class="text">
+                        Projects
                     </div>
-                </div>
-            </div>
-            <img id="people" src="./Assets/couple1.png" alt="">
-            <img id="house" src="./Assets/house2.png" alt="">
-            <img id="smoke" src="./Assets/smoke.png" alt="">
+
+        </div>
+        <div id="contact">
+                <div class="text">
+                        contact
+                    </div>
+
         </div>
     </div>
-    <script src="./main.js"></script>
 
 </body>
 
