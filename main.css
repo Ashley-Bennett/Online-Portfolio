@@ -5,7 +5,7 @@ body {
 #container {
     display: grid;
     grid-template-areas:
-        "about . projects"
+        "about . project"
         ". intro ."
         ". contact .";
     grid-template-columns:
@@ -13,7 +13,7 @@ body {
     grid-template-rows:
         25vh 65vh 10vh;
 
-    transition: 500ms ease-in;
+    transition: 700ms linear;
 }
 
 .highlight {
@@ -31,8 +31,16 @@ body {
     grid-area: intro;
 }
 
-.introAbout{
+.introAbout {
     transform: translate(100vw, 100vh) scale(0.1);
+}
+
+.introProject {
+    transform: translate(-100vw, 100vh) scale(0.1);
+}
+
+.introContact {
+    transform: translate(0vw, -100vh) scale(0.1);
 }
 
 
@@ -48,19 +56,25 @@ body {
 
     border-right: 2px solid royalblue;
     border-bottom: 2px solid royalblue;
-    transition: 100ms ease-in-out;
+    transition: 200ms linear;
 }
 
 #about:hover {
-    transform: scale(1.2);
+    transform: translate(20px, 20px);
     cursor: pointer;
 }
 
-#projects {
-    grid-area: projects;
+#project {
+    grid-area: project;
 
     border-left: 2px solid red;
     border-bottom: 2px solid red;
+    transition: 200ms linear;
+}
+
+#project:hover {
+    transform: translate(-20px, 20px);
+    cursor: pointer;
 }
 
 #contact {
@@ -69,15 +83,125 @@ body {
     border-left: 2px solid yellow;
     border-top: 2px solid yellow;
     border-right: 2px solid yellow;
+    transition: 200ms linear;
+}
+
+#contact:hover {
+    transform: translate(0px, -20px);
+    cursor: pointer;
 }
 
 #aboutPage {
-    transition: 500ms ease-in;
-    display: none;
+    transition: 700ms linear;
     
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    text-align: center;
+
+    grid-template-areas:
+        ". . ."
+        ". text ."
+        ". . return";
+    grid-template-columns:
+        25vw 50vw 25vw;
+    grid-template-rows:
+        25vh 50vh 25vh;
 }
 
+#aboutText{
+    grid-area: text
+}
+
+#aboutReturn {
+    grid-area: return;
+    border-left: 2px solid royalblue;
+    border-top: 2px solid royalblue;
+    transition: 200ms linear;
+}
+
+#aboutReturn:hover {
+    transform: translate(-20px, -20px);
+    cursor: pointer;
+}
 
 .aboutIn {
-    transform: translate(0vw, 0vh) scale(1);
+    transform: translate(-100vw, -100vh) scale(0.1);
+}
+
+#projectPage {
+    transition: 700ms linear;
+    
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    text-align: center;
+
+    grid-template-areas:
+        ". . ."
+        ". text ."
+        "return . .";
+    grid-template-columns:
+        25vw 50vw 25vw;
+    grid-template-rows:
+        25vh 50vh 25vh;
+}
+
+#projectText{
+    grid-area: text
+}
+
+#projectReturn {
+    grid-area: return;
+    border-top: 2px solid red;
+    border-right: 2px solid red;
+    transition: 200ms linear;
+}
+
+#projectReturn:hover {
+    transform: translate(20px, -20px);
+    cursor: pointer;
+}
+
+.projectIn {
+    transform: translate(100vw, -100vh) scale(0.1);
+}
+
+#contactPage {
+    transition: 700ms linear;
+    
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    text-align: center;
+
+    grid-template-areas:
+        ". return ."
+        ". text ."
+        ". . .";
+    grid-template-columns:
+        25vw 50vw 25vw;
+    grid-template-rows:
+        10vh 65vh 25vh;
+}
+
+#contactText{
+    grid-area: text
+}
+
+#contactReturn {
+    grid-area: return;
+    border-bottom: 2px solid yellow;
+    border-right: 2px solid yellow;
+    border-left: 2px solid yellow;
+    transition: 200ms linear;
+}
+
+#contactReturn:hover {
+    transform: translate(0px, 20px);
+    cursor: pointer;
+}
+
+.contactIn {
+    transform: translate(0vw, 100vh) scale(0.1);
 }
