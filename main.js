@@ -9,13 +9,22 @@ const contactPage = document.getElementById("contactPage")
 const contactButton = document.getElementById("contact")
 const contactReturnButton = document.getElementById("contactReturn")
 
-// const projectA = document.getElementById("projectA")
-// const projectADesc = document.getElementById("projectsADesc")
+const projectsA = document.getElementById("projectsA")
+const projectsADesc = document.getElementById("projectsADesc")
 
-// projectA.addEventListener("click", () => {
-//     let display = projectADesc.style.display
-//     console.log(display)
-// })
+projectsA.addEventListener("click", () => {
+    projectsADesc.style.display="none"
+    let style = projectsADesc.style
+    if (style.display == "none"){
+        style.display="inline"
+        console.log("inline")
+    } else if (style.display == "inline"){
+        style.display="none"
+        console.log("none")
+    } else {
+        console.log("broken")
+    }
+})
 
 
 const dipsplayNone = (page) => {

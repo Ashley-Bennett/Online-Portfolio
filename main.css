@@ -272,8 +272,28 @@ img {
 
 #projectsA {
     grid-area: A;
+}
+
+#projectsATitle {
+    transform: translate(12vw, 0vh);
+}
+
+#projectsADesc {
+    transform: translate(25vw, 0vh)
+}
+
+#projectsATitle:hover {
+    transition: 200ms ease-in-out;
+    transform: translate(10vw, 0vh);
     cursor: pointer;
-    
+}
+
+#projectsATitle:active {
+    transform: translate(0vw, 0vh)
+}
+
+#projectsATitle:hover > #projectsADesc{
+    transform: translate(100vw, 0vh)
 }
 
 
@@ -281,39 +301,18 @@ img {
 #projectsa {
     grid-area: a;
     transition: 200ms ease-in-out;
+    /* z-index: 999; */
 }
 
 #projectsa:hover {
     cursor: pointer;
     transform: scale(1.2);
-    z-index: 999;
-}
-
-#projectsa:hover>#arrowA {
- transform: scale(1.2)
-}
-
-
-#projectsADesc {
-    display: none;
 
 }
 
-#projectsA:hover>#projectsADesc {
-    display: inline;
-}
 
-#projectsA:hover>#arrowA {
-    transform: scale(1.2)
-}
 
-#projectsA:active>#arrowA {
-    /* transform: rotate(180) scale(1.2) */
-}
 
-#projectsA:active>#projectsADesc {
-    display: inline;
-}
 
 
 #projectsB {
