@@ -9,7 +9,14 @@ const contactPage = document.getElementById("contactPage")
 const contactButton = document.getElementById("contact")
 const contactReturnButton = document.getElementById("contactReturn")
 
-const projectA = document.getElementsByClassName("")
+// const projectA = document.getElementById("projectA")
+// const projectADesc = document.getElementById("projectsADesc")
+
+// projectA.addEventListener("click", () => {
+//     let display = projectADesc.style.display
+//     console.log(display)
+// })
+
 
 const dipsplayNone = (page) => {
     // page.style.display = "none"
@@ -69,3 +76,4 @@ contactReturnButton.addEventListener("click", () => {
         contactPage.style.display="none"
     }, 500)
 })
+

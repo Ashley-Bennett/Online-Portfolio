@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./main.css">
     <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <title>Ashley Bennett</title>
 </head>
 
@@ -23,20 +25,22 @@
             </div>
         </div>
         <div id="about">
-            <div class="text">
+            <div class="text" id="aboutTitle">
                 About
             </div>
         </div>
         <div id="project">
-            <div class="text">
+            <div class="text" id="projectTitle">
                 Projects
             </div>
 
         </div>
         <div id="contact">
-            <div class="text">
-                contact
+            <i class="fas fa-angle-double-down" id="arrowLeft"></i>
+            <div class="text" id="contactTitle">
+                Contact Me
             </div>
+            <i class="fas fa-angle-double-down" id="arrowRight"></i>
 
         </div>
     </div>
@@ -47,10 +51,10 @@
         <div id="aboutText" class="text">
             Hi! My name is Ashley Bennett and I am a junior developer. I am currently studying at Code Nation and
             developing my skills every day. I am always learning new things and expanding my knowledge.
-            
+
             I am confident in my knowledge of HTML, CSS, and Javascript. I have also been using Node.js and React. Also,
             I have an understanding of MongoDB, Express and backend development.
-           
+
             I spend most of my free time playing video games with friends online. I also scuba dive, enjoy photography
             and bouldering. Spending time with my family is important and I wouldn't be doing this without them.
         </div>
@@ -64,16 +68,17 @@
         </div>
         <div id="projectsShowcase">
             <div id="projectsa">
-                <img src="./Assets/Dice Screen.png">
+
+                <img src="./Assets/Dice Screen.png" id="projectsaPic">
             </div>
             <div id="projectsA" class="text">
-                JS Dice Game
+                JS Dice Game <i class="fas fa-angle-double-down" id="arrowA"></i>
                 <br>
-                A dice game made with vanilla js with singlepayer and multiplayer.
+                <span id="projectsADesc">A dice game made with vanilla js with singlepayer and multiplayer.</span>
             </div>
-            <div id="projectsb">
+            <div id="projectsb" class="text">
 
-                <img src="./Assets/CalculatorScreen.png">
+                <img src="./Assets/CalculatorScreen.png" id="projectsbPic">
 
             </div>
             <div id="projectsB" class="text">
@@ -83,7 +88,7 @@
             </div>
             <div id="projectsc">
 
-                <img src="./Assets/GameOfLifeScreen.png">
+                <img src="./Assets/GameOfLifeScreen.png" id="projectscPic">
 
             </div>
             <div id="projectsC" class="text">
@@ -156,7 +161,11 @@
             Contact Page
         </div>
         <div id="contactReturn" class="text">
-            return
+            <i class="fas fa-angle-double-down" id="contactArrowLeft"></i>
+            <div class="text" id="contactTitle">
+                return
+            </div>
+            <i class="fas fa-angle-double-down" id="contactArrowRight"></i>
         </div>
     </div>
 
